@@ -1384,6 +1384,9 @@
     display: -ms-flexbox;
     display: flex;
   }
+  .div-block-15 {
+    margin-bottom: 46px;
+  }
   .text-block-2 {
     font-family: Georgia, Times, 'Times New Roman', serif;
     color: #fff;
