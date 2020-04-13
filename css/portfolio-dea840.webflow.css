@@ -1154,14 +1154,14 @@
   .grid-3 {
     display: -ms-grid;
     display: grid;
-    margin: 10px -2px 0px 2px;
+    margin: 10px auto 0px;
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
     grid-column-gap: 12px;
     grid-row-gap: 16px;
-    grid-template-areas: "." "Area";
-    -ms-grid-columns: 0.75fr;
-    grid-template-columns: 0.75fr;
+    grid-template-areas: ".";
+    -ms-grid-columns: 1.75fr;
+    grid-template-columns: 1.75fr;
     -ms-grid-rows: auto 16px auto;
     grid-template-rows: auto auto;
   }
@@ -1172,16 +1172,20 @@
     -webkit-transform: perspective(0px);
     transform: perspective(0px);
   }
+  .list {
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
   .list-item {
     margin-right: 20px;
     margin-left: 20px;
   }
   .list-item-2 {
-    margin-right: 40px;
+    margin-right: 20px;
     margin-left: 20px;
   }
   .list-item-3 {
-    margin-right: 40px;
+    margin-right: 20px;
     margin-bottom: 20px;
     padding-left: 20px;
   }
@@ -1225,18 +1229,26 @@
     grid-column-gap: 16px;
     grid-row-gap: 16px;
     grid-template-areas: ".";
-    -ms-grid-columns: 1fr 16px 1fr 16px 1fr 16px 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 16px 1fr 16px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: auto 16px auto 16px auto 16px auto 16px auto 16px auto 16px auto 16px auto;
     grid-template-rows: auto auto auto auto auto auto auto auto;
   }
   .grid-5 {
-    margin-right: auto;
-    margin-left: auto;
-    padding: 42px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 0px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    justify-items: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
     grid-auto-flow: column;
-    -ms-grid-columns: 1.25fr;
-    grid-template-columns: 1.25fr;
+    -ms-grid-columns: 0.75fr;
+    grid-template-columns: 0.75fr;
     -ms-grid-rows: auto auto auto auto auto auto auto auto auto auto;
     grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
   }
@@ -1409,6 +1421,10 @@
   }
   .body {
     min-width: 422px;
+  }
+  .container-4 {
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -1789,8 +1805,8 @@
   #w-node-936142dbb1c4-1596fe23 {
     -ms-grid-column: 1;
     grid-column-start: 1;
-    -ms-grid-column-span: 4;
-    grid-column-end: 5;
+    -ms-grid-column-span: 3;
+    grid-column-end: 4;
     -ms-grid-row: 7;
     grid-row-start: 7;
     -ms-grid-row-span: 1;
@@ -1803,14 +1819,14 @@
     grid-row-end: 4;
     -ms-grid-column: 1;
     grid-column-start: 1;
-    -ms-grid-column-span: 4;
-    grid-column-end: 5;
+    -ms-grid-column-span: 3;
+    grid-column-end: 4;
   }
   #w-node-2fb704e3ae47-1596fe23 {
     -ms-grid-column: 1;
     grid-column-start: 1;
-    -ms-grid-column-span: 4;
-    grid-column-end: 5;
+    -ms-grid-column-span: 3;
+    grid-column-end: 4;
     -ms-grid-row: 8;
     grid-row-start: 8;
     -ms-grid-row-span: 1;
@@ -1823,8 +1839,8 @@
   #w-node-1e4ccfcaa0a4-1596fe23 {
     -ms-grid-column: 1;
     grid-column-start: 1;
-    -ms-grid-column-span: 4;
-    grid-column-end: 5;
+    -ms-grid-column-span: 3;
+    grid-column-end: 4;
     -ms-grid-row: 5;
     grid-row-start: 5;
     -ms-grid-row-span: 1;
@@ -1837,8 +1853,8 @@
     grid-row-end: 2;
     -ms-grid-column: 1;
     grid-column-start: 1;
-    -ms-grid-column-span: 4;
-    grid-column-end: 5;
+    -ms-grid-column-span: 3;
+    grid-column-end: 4;
     -ms-grid-column-align: center;
     justify-self: center;
     -ms-grid-row-align: center;
@@ -1851,8 +1867,8 @@
     grid-row-end: 5;
     -ms-grid-column: 1;
     grid-column-start: 1;
-    -ms-grid-column-span: 4;
-    grid-column-end: 5;
+    -ms-grid-column-span: 3;
+    grid-column-end: 4;
     -ms-grid-row-align: center;
     align-self: center;
     -ms-grid-column-align: center;
@@ -1865,8 +1881,8 @@
     grid-row-end: 3;
     -ms-grid-column: 1;
     grid-column-start: 1;
-    -ms-grid-column-span: 4;
-    grid-column-end: 5;
+    -ms-grid-column-span: 3;
+    grid-column-end: 4;
     -ms-grid-column-align: center;
     justify-self: center;
     -ms-grid-row-align: center;
@@ -1877,8 +1893,8 @@
     grid-column-start: 1;
     -ms-grid-row: 6;
     grid-row-start: 6;
-    -ms-grid-column-span: 4;
-    grid-column-end: 5;
+    -ms-grid-column-span: 3;
+    grid-column-end: 4;
     -ms-grid-row-span: 1;
     grid-row-end: 7;
     -ms-grid-row-align: center;
